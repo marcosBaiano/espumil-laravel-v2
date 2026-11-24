@@ -1,0 +1,184 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.formulario {
+   /*background-image: url('../../assets/image.png');*/
+  background:#23a5cc;
+  padding: 20px;
+  max-width: 100%;
+  margin: auto;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px  #023662;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dados-gerais {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.dados-gerais label {
+  flex: 1 1 18%;
+  min-width: 155px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+/* BORDA DO FORMULARIO*/ 
+/*table, th, td {
+/*  border: 1px solid rgb(15, 14, 14);
+/*}*/
+
+table, th, td {
+  /*border: 1px solid rgb(15, 14, 14);
+  */border-collapse: separate;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+th, td {
+    
+  padding: 8px;
+  text-align: center;
+  flex: 1 1 18%;
+  
+}
+
+input[type="text"],
+input[type="number"],
+input[type="DateTime-local"],
+input[type="date"] {
+border: 1px solid #000000;
+  padding: 6px 8px;
+  border-radius: 2.5px;  /* 👉 isso aqui deixa arredondado */
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.botoes {
+text-align: center
+}
+
+    .botoes1 {
+      display: grid;
+      grid-template-columns: repeat(4, 20px); /* 4 colunas */
+      gap: 2px;
+      margin-top: 10px;
+      width: max-content;
+    }
+
+    .botoes1 button {
+    
+    font-size: 12px;
+    border-radius: 2.5px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .botoes1 button.selecionado {
+    background-color:#2376cc;
+    outline: 1px solid rgb(255, 255, 255);
+  }
+   
+  .botoes2 {
+      display: grid;
+      grid-template-columns: repeat(4, 70px); /* 4 colunas */
+      gap: 2px;
+      margin-top: 10px;
+      width: max-content;
+    }
+
+    .botoes2 button {
+    
+    font-size: 12px;
+    border-radius: 2.5px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .botoes2 button.selecionado {
+    background-color:#2376cc;
+    outline: 1px solid rgb(255, 255, 255);
+  }
+
+.botoes_1 {
+      display: grid;
+      grid-template-columns: repeat(1, 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px);
+      counter-reset: auto;
+      gap: 2px;
+      margin-top: 10px;
+      width: max-content;
+    }
+
+    .botoes_1 button {
+    font-size: 12px;
+    border-radius: 2.5px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .botoes_1 button.selecionado {
+    background-color:#2376cc;
+    outline: 1px solid rgb(255, 255, 255);
+  }
+
+
+  P{
+    text-align: center;
+  margin-bottom: 20px;
+  }
+
+
+ .grid-formatos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .grid-formatos input[type="radio"] {
+    display: none; /* esconder o radio */
+  }
+
+  .grid-formatos label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 4px; /* cantos arredondados */
+    background: white;
+    cursor: pointer;
+    width: 60px;
+    height: 35px;
+    font-weight: bold;
+  }
+
+  .grid-formatos input[type="radio"]:checked + label {
+    background: #2376cc;
+    border: 2px solid rgb(255, 255, 255);
+  }
